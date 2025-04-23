@@ -1,0 +1,391 @@
+:root {
+
+    /* Root Colors */
+    --white: #fff;
+    --light-gray: #d3d3d3; 
+    --berkeley-blue: #002676;
+    --berkeley-gold: #FDB515;
+
+    /* Root h1 Font-Size */
+    --h1-base-font-size: 22px; 
+
+    /* Root Padding */
+    --base-padding: 10px;
+  }
+  
+  
+
+
+
+  * {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+/* CSS FOR THE ENTIRE HOME PAGE (index.html) */
+
+/* Entire Header Section (includes navigation menu) */
+
+.one-entire-header-with-navigation-menu {
+  display: flex;
+  width: 100%;
+  padding: 40px;
+}
+
+
+
+
+
+/* Parent Container for Navigation Menu Bar */
+
+.three-parent-container-for-navigation-menu-bar {
+  display: flex;
+  margin-left: auto;            
+}
+
+
+
+
+
+/* Navigation Menu Bar Buttons */
+
+.four-navigation-menu-bar-buttons {
+  display: flex;
+  color: var(--berkeley-blue);
+  list-style-type: none;
+  gap: 30px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+
+
+
+
+/* UC Berkeley Tower Image Parent Container */
+
+.five-uc-berkeley-tower-image-parent-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+
+
+/* UC Berkeley Tower Image Itself */
+
+.six-uc-berkeley-tower-image-itself {
+ width: 100%;
+ height: auto;
+}
+
+
+
+
+
+/* Graduation Portrait Image */
+
+.seven-graduation-portrait-image {
+  
+  position: absolute;
+  top: 4%;
+  left: 20%;
+  height: 350px;
+  border-radius: 50%;
+}
+
+
+
+
+
+/* Home Page Intro Text: Parent Container */
+
+.eight-home-page-intro-text-parent-container{
+  position: absolute;
+    top: 0%;
+    left: 45%;
+}
+
+
+
+
+
+/* Home Page Intro Text: Itself */
+
+.ten-home-page-intro-text-itself{
+    background-color: var(--berkeley-blue);
+    color: white;
+    padding: 7px;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+
+
+
+/* Styling The Buttons With Shared Styles */
+
+.button {
+  color: var(--berkeley-blue); 
+  background-color: var(--berkeley-gold);
+
+  text-decoration: none;
+  border: none;
+
+  font-family: inherit;
+  font-size: 18px;
+  
+  padding: 10px 20px;
+  
+  border-radius: 4px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+
+  transition: opacity 0.1s ease-in-out;
+}
+
+
+
+
+
+/* Buttons Hover and Focus Effects */
+
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+
+
+
+
+/* Entire Footer Section */
+
+.thirteen-entire-footer-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS FOR THE ENTIRE ABOUT PAGE */
+.parent-container-for-download-resume-button {
+  margin: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS FOR THE ENTIRE WORK PAGE (index.html) */
+
+/* Grid that Displays the Projects */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+
+
+
+
+/* Individual Box Inside the Grid */
+
+.grid__item {
+background-color: var(--light-gray);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS FOR ELEMENTS FOUND THROUGHOUT ALL THE PAGES */
+
+/* Default Edits for All Text in the Body Section */
+
+body { 
+  color: var(--berkeley-blue);
+  background-color: var(--white);
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+
+
+
+
+/* Default Edits for ALL h1 Text */
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+
+
+
+
+/* Default Edits for ALL Links */
+
+a {
+  color: var(--berkeley-blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS FOR RESPONSIVENESS FOR ALL ELEMENTS THROUGHOUT ALL THE PAGES */
+
+/* Responsiveness for ALL Elements */
+
+@media all and (max-width: 750px) {
+    * {
+      max-width: 100%;
+      overflow-wrap: break-word;
+    }
+
+
+          /* Responsiveness for Body Elements */
+
+            body {
+              font-size: 16px;
+              padding: 10px;
+            }
+
+
+
+          /* Responsiveness for h1 Elements */
+
+           h1 {
+            font-size:
+            var(--h1-base-font-size);
+            }
+
+
+
+            /* Responsiveness for img Elements */
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+
+
+
+          /* Responsiveness for grid Elements */
+
+          .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: var(--base-padding);
+          }
+
+
+
+          /* Responsiveness for grid last child Elements */
+
+          .grid__item:last-child {
+            grid-column: auto / auto;
+            grid-row: auto / auto;
+          }
+
+
+
+          /* Responsivenes for Footer Social Media Icons */
+          .fourteen-parent-container-holding-all-social-media-icons img {
+            width: 60px;
+            height: auto;
+          }
+
+}
