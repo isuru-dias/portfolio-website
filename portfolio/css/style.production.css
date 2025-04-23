@@ -145,7 +145,7 @@ button:hover, button:focus {
 
 
 
-.page-header__item:last-child {
+.header-berkeley-logo-image:last-child {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -460,8 +460,18 @@ button:hover, button:focus {
 }
 
 
-.page-header__item {
+.header-berkeley-logo-image {
     max-width: 100%
 }
 
 
+
+.uc-berkeley-tower-image {
+  display: flex;
+  margin-left: auto;
+  margin-right: 0;
+
+  height: 300px;
+  width: 250px;
+  max-width: 650px; 
+}

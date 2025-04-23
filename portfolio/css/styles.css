@@ -1,21 +1,21 @@
 :root {
-    --white: #fff;
-    --berkeley-blue: #003262;
-    --steel-blue: #336699; 
-    --berkeley-gold: #FDB515;
-    --sea-green: #489c79;
-    --sunflower-yellow: #edc655; 
-    --pale-yellow: #fcffad;
-    --bright-orange: #f76414;
-    --charcoal-gray: #2b2b2b;
-    --light-gray: #d3d3d3; 
 
+    /* Root Colors */
+    --white: #fff;
+    --light-gray: #d3d3d3; 
+    --berkeley-blue: #002676;
+    --berkeley-gold: #FDB515;
+
+    /* Root h1 Font-Size */
     --h1-base-font-size: 22px; 
+
+    /* Root Padding */
     --base-padding: 10px;
-    --base-border-radius: 3px; 
   }
   
   
+
+
 
   * {
     box-sizing: border-box;
@@ -23,346 +23,369 @@
 
 
 
-body { 
-    background-color: var(--white);
-    color: var(--berkeley-blue);
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.2;
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+/* CSS FOR THE ENTIRE HOME PAGE (index.html) */
+
+/* Entire Header Section (includes navigation menu) */
+
+.one-entire-header-with-navigation-menu {
+  display: flex;
+  width: 100%;
+  padding: 40px;
 }
 
 
 
-h1 {
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 1.2;
+
+
+/* Parent Container for Navigation Menu Bar */
+
+.three-parent-container-for-navigation-menu-bar {
+  display: flex;
+  margin-left: auto;            
 }
 
 
 
-a {
-    color: var(--berkeley-blue);
+
+
+/* Navigation Menu Bar Buttons */
+
+.four-navigation-menu-bar-buttons {
+  display: flex;
+  color: var(--berkeley-blue);
+  list-style-type: none;
+  gap: 30px;
+  font-size: 30px;
+  text-decoration: none;
 }
 
 
 
-a:visited {
-    color: var(--steel-blue);
+
+
+/* UC Berkeley Tower Image Parent Container */
+
+.five-uc-berkeley-tower-image-parent-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 
 
-a:hover, a:focus {
-    text-decoration: none; color: var(--berkeley-blue);
+
+
+/* UC Berkeley Tower Image Itself */
+
+.six-uc-berkeley-tower-image-itself {
+ width: 100%;
+ height: auto;
 }
 
 
 
-a:active {
-    color: var(--sea-green);
+
+
+/* Graduation Portrait Image */
+
+.seven-graduation-portrait-image {
+  
+  position: absolute;
+  top: 4%;
+  left: 20%;
+  height: 350px;
+  border-radius: 50%;
 }
 
 
 
-button {
-    border: none;
-    font-family: inherit; 
-    background-color: var(--berkeley-gold);
-    color: var(--berkeley-blue); 
-    text-decoration: none; 
-    padding: var(--base-padding);
-    border-radius: var(--base-border-radius);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);    
+
+
+/* Home Page Intro Text: Parent Container */
+
+.eight-home-page-intro-text-parent-container{
+  position: absolute;
+    top: 0%;
+    left: 45%;
 }
 
 
 
-button:hover, button:focus {
-    cursor: pointer;
-    opacity: 0.8;
+
+
+/* Home Page Intro Text: Itself */
+
+.ten-home-page-intro-text-itself{
+    background-color: var(--berkeley-blue);
+    color: white;
+    padding: 7px;
+    width: fit-content;
+    font-weight: bolder;
 }
 
 
 
-.button__secondary { 
-    background-color: var(--berkeley-gold);
-    color: var(--berkeley-blue);
+
+/* Styling The Buttons With Shared Styles */
+
+.button {
+  color: var(--berkeley-blue); 
+  background-color: var(--berkeley-gold);
+
+  text-decoration: none;
+  border: none;
+
+  font-family: inherit;
+  font-size: 18px;
+  
+  padding: 10px 20px;
+  
+  border-radius: 4px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+
+  transition: opacity 0.1s ease-in-out;
 }
 
 
 
-.profile__portrait {
-    float: left; 
-    width: 250px;
-    margin-right: 40px;
-    border-radius: 50%;
+
+
+/* Buttons Hover and Focus Effects */
+
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 
 
-.profile {
-    max-width: 700px;
-    margin: 0 auto; 
+
+
+/* Entire Footer Section */
+
+.thirteen-entire-footer-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
 }
 
 
 
-.page-footer {
-    clear: both;
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS FOR THE ENTIRE ABOUT PAGE */
+.parent-container-for-download-resume-button {
+  margin: 20px;
+
 }
 
 
 
-.page-header {
-    display: flex;
-    width: 100%;
-    padding: 20px;
-}
 
 
 
-.page-header {
-    flex: 0 1 200px;
-    
-}
 
 
 
-.page-header__item:last-child {
-    flex-grow: 1;
-    text-align: right;
-}
 
 
 
-.navigation-list {
-    list-style-type: none;
-}
 
 
 
-.navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
-}
 
 
 
-.grid__item {
-    background-color: var(--light-gray);
-}
 
+/* CSS FOR THE ENTIRE WORK PAGE (index.html) */
 
+/* Grid that Displays the Projects */
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
 
 
 
-  @media all and (max-width: 500px) {
-    .grid {
-      grid-template-columns: 1fr;
-      grid-gap: var(--base-padding);
-    }
-    .grid__item:last-child {
-      grid-column: auto / auto;
-      grid-row: auto / auto;
-    }
-    h1 {
-      font-size: var(--h1-base-font-size)
-    }
-  }
 
 
+/* Individual Box Inside the Grid */
 
-  @media all and (min-width: 500px) and (max-width: 750px){
-    .grid {
-      grid-template-columns: 1fr 1fr;
-      grid-gap: var(--base-padding);
-    }
-    .grid__item:last-child {
-      grid-column: auto / auto;
-      grid-row: auto / auto;
-    }
-    h1 {
-      font-size: var(--h1-base-font-size)
-    }
-  }
-
-
-
-  @media all and (max-width: 500px) {
-    .grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-
-
-  @media all and (min-width: 500px) and (max-width: 750px){
-    .grid {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  @media all and (max-width: 750px) {
-    .grid {
-      grid-gap: var(--base-padding);
-    }
-    .grid__item:last-child {
-      grid-column: auto / auto;
-      grid-row: auto / auto;
-    }
-    h1 {
-      font-size: var(--h1-base-font-size)
-    }
-  }
-
-
-
-  @media all and (max-width: 500px) {
-    .grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  @media all and (min-width: 500px) and (max-width: 750px){
-    .grid {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  @media all and (max-width: 750px) {
-    .grid {
-      grid-gap: var(--base-padding);
-    }
-    .grid__item:last-child {
-      grid-column: auto / auto;
-      grid-row: auto / auto;
-    }
-    h1 {
-      font-size: var(--h1-base-font-size)
-    }
-  }
-
-
-
-  .button, button {
-    border: none;
-    display: inline-block;
-    font-family: inherit;
-    background-color: var(--berkeley-gold);
-    text-decoration: none;
-    padding: var(--base-padding);
-    border-radius: var(--base-border-radius);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    transition-duration: 0.2s;
-    transition-property: opacity;
-  }
-
-
-
-  a.button {
-    color: var(--berkeley-blue);
-  }
-  
-
-
-  button:hover,
-  button:focus,
-  .button:hover,
-  .button:focus {
-    cursor: pointer;
-    opacity: 0.8;
-  }
-
-
-
-    @keyframes color-change {
-    0% {
-      fill: var(--sunflower-yellow); 
-    }
-    50% {
-      fill: var(--pale-yellow);
-    }
-    100% {
-      fill: var(--bright-orange);
-
-    }
-  }
-
-
-
-  .sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
-
-
-
-  @keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
-    to {
-      transform: translate(200px, 50px);
-    }
-  }
-
-
-
-  .cloud-front {
-    animation-duration: 30s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
-
-
-
-  @keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
-    to {
-      transform: translate(100px, 48px);
-    }
-  }
-
-
-  
-  .cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+.grid__item {
+background-color: var(--light-gray);
 }
 
 
-.berlin-illustration {
-    max-width: 100%;
-    height: auto;
-    display: block;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS FOR ELEMENTS FOUND THROUGHOUT ALL THE PAGES */
+
+/* Default Edits for All Text in the Body Section */
+
+body { 
+  color: var(--berkeley-blue);
+  background-color: var(--white);
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 
-.page-header {
-    max-width: 100%;
-    height: auto;
-    display: block;
+
+
+
+/* Default Edits for ALL h1 Text */
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 
-.page-header__item {
-    max-width: 100%
+
+
+
+/* Default Edits for ALL Links */
+
+a {
+  color: var(--berkeley-blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS FOR RESPONSIVENESS FOR ALL ELEMENTS THROUGHOUT ALL THE PAGES */
+
+/* Responsiveness for ALL Elements */
+
+@media all and (max-width: 750px) {
+    * {
+      max-width: 100%;
+      overflow-wrap: break-word;
+    }
+
+
+          /* Responsiveness for Body Elements */
+
+            body {
+              font-size: 16px;
+              padding: 10px;
+            }
+
+
+
+          /* Responsiveness for h1 Elements */
+
+           h1 {
+            font-size:
+            var(--h1-base-font-size);
+            }
+
+
+
+            /* Responsiveness for img Elements */
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+
+
+
+          /* Responsiveness for grid Elements */
+
+          .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: var(--base-padding);
+          }
+
+
+
+          /* Responsiveness for grid last child Elements */
+
+          .grid__item:last-child {
+            grid-column: auto / auto;
+            grid-row: auto / auto;
+          }
+
+
+
+          /* Responsivenes for Footer Social Media Icons */
+          .fourteen-parent-container-holding-all-social-media-icons img {
+            width: 60px;
+            height: auto;
+          }
+
 }
